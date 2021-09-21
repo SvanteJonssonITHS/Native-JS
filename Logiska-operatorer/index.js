@@ -1,2 +1,3 @@
 let b = false;
-console.log(!b);
+let c = true;
+console.log(b && c, b || c);
