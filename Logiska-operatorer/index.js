@@ -1,3 +1,8 @@
 let b = false;
 let c = true;
-console.log(b && c, b || c);
+
+let n = 1;
+let o = 3.5;
+
+let s = "Hello ";
+let t = "World!";
