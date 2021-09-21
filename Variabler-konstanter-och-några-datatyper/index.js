@@ -1,5 +1,2 @@
-let someString = "string"
-let someNumber = 21
-let someBoolean = true
-let someNull = null
-let someUndefined
+var input = prompt("Skriv in ditt namn!");
+window.alert(`Hej ${input}!`)
