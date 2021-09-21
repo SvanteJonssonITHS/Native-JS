@@ -1,8 +1,4 @@
-let b = false;
-let c = true;
-
-let n = 1;
-let o = 3.5;
-
-let s = "Hello ";
-let t = "World!";
+let a = 4;
+let b = true;
+let c = 2;
+let d = "Hey";
