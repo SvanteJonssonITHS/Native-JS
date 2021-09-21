@@ -1,2 +1,5 @@
-const first = 1;
-const second = 2;
+let someString = "string"
+let someNumber = 21
+let someBoolean = true
+let someNull = null
+let someUndefined
