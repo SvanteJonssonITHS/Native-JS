@@ -1,3 +1,4 @@
-let age = prompt("Write your age:");
-age++
-window.alert(`Nästa gång du fyller år blir du ${age}.`);
+let base = prompt("Write a number:");
+let exp = prompt("Write another number:");
+let result = Math.pow(base, exp);
+window.alert(`${result}`);
