@@ -1,2 +1,3 @@
-let price = prompt("Skriv in kostnaden:");
-window.alert(price * 0.8);
+let age = prompt("Write your age:");
+age++
+window.alert(`Nästa gång du fyller år blir du ${age}.`);
