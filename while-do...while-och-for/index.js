@@ -1,6 +1,4 @@
 let amount = prompt("Input amount!")
-let counter = 0;
-while (counter < amount) {
+for (let i = 0; i < amount; i++) {
     window.alert(amount)
-    counter++;
 }
