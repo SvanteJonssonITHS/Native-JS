@@ -1,1 +1,1 @@
-let a = [1, 2, 3]
+let a = ["string", 10, true]
