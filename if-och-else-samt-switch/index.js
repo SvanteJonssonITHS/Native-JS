@@ -1,4 +1,5 @@
-let age = prompt("What's your age?")
+let username = prompt("Input your username:")
+let password = prompt("Input your password:")
 
-if(age >= 18) window.alert("Vuxen");
-else window.alert("Ungdom");
+if(username == "alice" && password == "secret") window.alert("Inloggad!");
+else window.alert("Fel användarnamn eller lösenord!");
