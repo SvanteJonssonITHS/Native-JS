@@ -1,3 +1,6 @@
-for (let i = 0; i < 3; i++) {
-    console.log("Hello World!");
+let amount = prompt("Input amount!")
+let counter = 0;
+while (counter < amount) {
+    window.alert(amount)
+    counter++;
 }
