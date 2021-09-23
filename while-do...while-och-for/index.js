@@ -1,5 +1,3 @@
-let counter = 0
-while (counter < 3) {
-    console.log("Hello World!")
-    counter++
+for (let i = 0; i < 3; i++) {
+    console.log("Hello World!");
 }
