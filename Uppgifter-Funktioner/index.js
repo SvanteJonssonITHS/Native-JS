@@ -1,7 +1,7 @@
-function repeat(msg, amount){
-    let a = []
-    for (let i = 0; i < amount; i++) {
-        a.push(msg)
+function sum(){
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i]
     }
-    return a;
+    return sum;
 }
