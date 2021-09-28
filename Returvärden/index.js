@@ -1,3 +1,3 @@
-function greeting(){
-    return 'Hello World!'
+function greeting(input){
+    return `Hello ${input}!`
 }
