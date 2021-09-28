@@ -1,3 +1,3 @@
-function greeting(input){
-    return `Hello ${input}!`
+function successor(input){
+    return (input + 1);
 }
