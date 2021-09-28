@@ -1,3 +1,3 @@
-function concatenateAndLog(one, two){
-    console.log(one + two)
+function logLength(array){
+    console.log(array.length)
 }
