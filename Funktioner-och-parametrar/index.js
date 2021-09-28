@@ -1,3 +1,3 @@
-function displayDialogBox(){
-    alert("Hello World!")
+function displayDialogBox(message){
+    alert(message)
 }
