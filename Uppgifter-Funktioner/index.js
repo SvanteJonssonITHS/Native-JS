@@ -1,7 +1,7 @@
-function reverse(a){
-    let reversed = [];
-    for (let i = a.length -1; i >= 0; i--) {
-        reversed.push(a[i])
+function repeat(msg, amount){
+    let a = []
+    for (let i = 0; i < amount; i++) {
+        a.push(msg)
     }
-    return reversed;
+    return a;
 }
