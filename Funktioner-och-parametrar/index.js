@@ -1,3 +1,3 @@
-function logLength(array){
-    console.log(array.length)
+function lookup(object, string){
+    console.log(object[string])
 }
