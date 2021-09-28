@@ -1,3 +1,3 @@
-function successor(input){
-    return (input + 1);
+function difference(one, two){
+    return (one - two);
 }
