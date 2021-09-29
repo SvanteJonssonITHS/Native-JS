@@ -1,9 +1,13 @@
-shuffle = (cards) => {
-    let n = cards.length, t, i
-    while (n) {
-        i = Math.floor(Math.random() * n--);
-        t = cards[n];
-        cards[n] = cards[i];
-        cards[i] = t;
+score = (cards) => {
+    let sum = 0
+    for (let i = 0; i < cards.length; i++) {
+        if(cards[i].value == 1){
+            sum += 11
+        } else if(cards[i].value >= 10){
+            sum += 10
+        } else {
+            sum += cards[i].value
+        }
     }
+    return sum
 }
