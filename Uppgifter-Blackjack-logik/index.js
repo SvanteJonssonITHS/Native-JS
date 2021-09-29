@@ -1,4 +1,3 @@
-let aceOfHearts = {
-    suit: 'HEARTS',
-    value: 1,
+card = (value, suit) => {
+    return {suit: suit, value: value }
 }
