@@ -1,3 +1,5 @@
-call = f => {
-    f()
+f = () => {
+    return() => {
+        return 'Hello World!'
+    }
 }
