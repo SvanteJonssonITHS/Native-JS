@@ -1,9 +1,7 @@
-function f(n) {
-    return n > 2
-  }
-  
-  function find(a, g) {
+function filter(a, f) {
+    let filtered = []
     for (let i = 0; i < a.length; i++) {
-        if(g(a[i])) return a[i]        
+        if(f(a[i])) filtered.push(a[i])     
     }
-  }
+    return filtered
+}
