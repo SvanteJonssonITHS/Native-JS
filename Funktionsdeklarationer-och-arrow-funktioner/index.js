@@ -1,4 +1,1 @@
-f = () => {
-    alert('Hello World!')
-    return true
-}
+f = () => 0
