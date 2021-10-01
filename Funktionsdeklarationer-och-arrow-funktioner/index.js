@@ -1,3 +1,4 @@
-function greeting() {
-    return 'Hello World!'
+f = () => {
+    alert('Hello World!')
+    return true
 }
