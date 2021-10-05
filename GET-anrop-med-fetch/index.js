@@ -1,4 +1,6 @@
-let promise = fetch('https://avancera.app/cities/4787e794-b3ac-4a63-bba0-03203f78e553')
+let city = prompt("Input a city: ")
+
+let promise = fetch(`https://avancera.app/cities/${city}`)
 
 promise
   .then(response => {
