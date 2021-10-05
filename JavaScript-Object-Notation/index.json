@@ -1,6 +1,20 @@
-{
-    "userName": "Bob",
-    "password": "secret",
-    "admin": true,
-    "id": 123
-}
+[
+    {
+        "userName": "Bob",
+        "password": "secret",
+        "admin": true,
+        "id": 123
+    },
+    {
+        "userName": "Bob",
+        "password": "secret",
+        "admin": true,
+        "id": 123
+    },
+    {
+        "userName": "Bob",
+        "password": "secret",
+        "admin": true,
+        "id": 123
+    }
+]
