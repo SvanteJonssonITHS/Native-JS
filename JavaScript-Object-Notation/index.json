@@ -1,4 +1,6 @@
 {
     "userName": "Bob",
-    "password": "secret"
+    "password": "secret",
+    "admin": true,
+    "id": 123
 }
