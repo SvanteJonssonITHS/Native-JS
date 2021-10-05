@@ -1,6 +1,7 @@
-let name = prompt("Input a city: ")
+let cityName = prompt("Input a city: ")
+let minPop = prompt("Input a min population: ")
 
-let promise = fetch(`https://avancera.app/cities/?name=${name}`)
+let promise = fetch(`https://avancera.app/cities/?name=${cityName}&minPopulation=${minPop}`)
 
 promise
   .then(response => {
