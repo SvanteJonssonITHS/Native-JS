@@ -1,1 +1,1 @@
-document.getElementsByTagName("ol")[0].setAttribute("type", "i")
+document.getElementsByTagName("li")[2].style.color = "#c00";
