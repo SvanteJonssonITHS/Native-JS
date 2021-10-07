@@ -1,2 +1,2 @@
-let item = document.querySelector("section#players")
-let items = document.querySelectorAll("li")
+let item = document.getElementById("players")
+let items = document.getElementsByTagName("li")
