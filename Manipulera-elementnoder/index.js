@@ -1,1 +1,1 @@
-document.getElementsByTagName("h1")[0].innerHTML = "Hello <u>World</u>!";
+document.getElementsByTagName("ol")[0].setAttribute("type", "i")
