@@ -1,2 +1,6 @@
 let node = document.createTextNode("Hello World!")
-document.body.appendChild(node)
+
+let header = document.createElement("h1")
+
+header.appendChild(node)
+document.body.appendChild(header)
