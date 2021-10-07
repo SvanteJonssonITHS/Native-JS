@@ -1,5 +1,4 @@
-let item = document.getElementById("players")
-let items = document.getElementsByTagName("li")
+let items = ol.children
 
 for (let i = 0; i < items.length; i++) {
     console.log(items[i])    
