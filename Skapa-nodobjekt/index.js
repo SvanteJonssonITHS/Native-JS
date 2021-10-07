@@ -1,3 +1,5 @@
 let list = document.getElementsByTagName("ol")[0]
-let item = document.getElementsByTagName("li")[1]
-list.removeChild(item)
+let oldItem = document.getElementsByTagName("li")[2]
+let newItem = document.createElement("li")
+newItem.innerText = "Svante"
+list.insertBefore(newItem, oldItem)
