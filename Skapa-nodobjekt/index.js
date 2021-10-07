@@ -1,6 +1,5 @@
-let node = document.createTextNode("Hello World!")
+let list = document.getElementsByTagName("ol")[0]
+let item = document.createElement("li")
+item.innerText = "Svante"
 
-let header = document.createElement("h1")
-
-header.appendChild(node)
-document.body.appendChild(header)
+list.appendChild(item)
