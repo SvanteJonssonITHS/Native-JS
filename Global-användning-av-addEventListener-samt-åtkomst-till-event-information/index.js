@@ -1,4 +1,3 @@
-document.addEventListener('keydown', () => {
-    let e = window.event
-    console.log(`${e.key}`)
+document.addEventListener('keydown', (e) => {
+    if(e.shiftKey && e.key != "Shift") {console.log(e.key)}
 })
