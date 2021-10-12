@@ -4,3 +4,6 @@ element.textContent = 1;
 document.getElementById('increase').addEventListener('click', () => {
     element.textContent = Number(element.textContent) + 1
 })
+document.getElementById('decrease').addEventListener('click', () => {
+    element.textContent = Number(element.textContent) - 1
+})
