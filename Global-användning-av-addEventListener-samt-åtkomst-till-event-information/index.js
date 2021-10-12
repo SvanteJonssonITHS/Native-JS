@@ -1,3 +1,4 @@
-window.onload = () => {
-    document.getElementById('button').addEventListener('click', () => {console.log('Hello World!')})
-}
+document.addEventListener('click', () => {
+    let e = window.event
+    console.log(`${e.pageX},${e.pageY}`)
+})
