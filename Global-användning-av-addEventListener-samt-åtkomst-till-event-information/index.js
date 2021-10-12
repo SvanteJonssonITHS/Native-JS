@@ -1,4 +1,4 @@
-document.addEventListener('click', () => {
+document.addEventListener('keydown', () => {
     let e = window.event
-    console.log(`${e.pageX},${e.pageY}`)
+    console.log(`${e.key}`)
 })
