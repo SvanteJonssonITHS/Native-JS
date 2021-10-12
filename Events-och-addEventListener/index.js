@@ -1,1 +1,1 @@
-document.getElementById('button').addEventListener('click', () => {console.log('Hello World!')})
+document.getElementById('hover-area').addEventListener('mousemove', () => {console.log('Hello World!')})
