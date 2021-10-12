@@ -1,1 +1,6 @@
-document.getElementById('hover-area').addEventListener('mousemove', () => {console.log('Hello World!')})
+let element = document.getElementById('value')
+element.textContent = 1;
+
+document.getElementById('increase').addEventListener('click', () => {
+    element.textContent = Number(element.textContent) + 1
+})
