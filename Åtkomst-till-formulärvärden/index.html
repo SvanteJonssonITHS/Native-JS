@@ -2,24 +2,26 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8">
-    <title>En kryssruta</title>
+    <title>submit (VG)</title>
   </head>
   <body>
-    <label for="name">Namn</label>
-    <input id="name" placeholder="Namn">
-    <label>
-      <input id="consent" type="checkbox">
-      Jag samtycker
-    </label>
-    <input id="send" type="button" value="Skicka">
-    <p id="greeting"></p>
-    <div id="errors" style="color: red; display: none;">
-      <p>Fel:</p>
-      <ul>
-        <li id="name-error">Vänligen fyll i ett namn</li>
-        <li id="consent-error">Samtycke måste lämnas</li>
-      </ul>
-    </div>
+    <form id="form">
+      <label for="name">Namn</label>
+      <input id="name" placeholder="Namn">
+      <label>
+        <input id="consent" type="checkbox">
+        Jag samtycker
+      </label>
+      <input type="submit" value="Skicka">
+      <p id="greeting"></p>
+      <div id="errors" style="color: red; display: none;">
+        <p>Fel:</p>
+        <ul>
+          <li id="name-error">Vänligen fyll i ett namn</li>
+          <li id="consent-error">Samtycke måste lämnas</li>
+        </ul>
+      </div>
+    </form>
     <script src="index.js"></script>
   </body>
 </html>

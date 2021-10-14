@@ -1,4 +1,5 @@
-let button = document.getElementById("send")
+let form = document.getElementById("form")
+    button = form.children[3]
     user = document.getElementById("name")
     consent = document.getElementById("consent")
     greeting = document.getElementById("greeting")
@@ -6,7 +7,7 @@ let button = document.getElementById("send")
     userError = document.getElementById("name-error")
     consentError = document.getElementById("consent-error")
 
-if(user.value.length > 0 && consent.checked == true) {
+if (user.value.length > 0 && consent.checked == true) {
     greeting.innerText = `Hej ${user.value}!`
     button.disabled = false
 } else {
@@ -14,22 +15,23 @@ if(user.value.length > 0 && consent.checked == true) {
     button.disabled = true
 }
 
-button.addEventListener('click', () =>{
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
     greeting.innerText = `Hej ${user.value}!`
 })
 
-user.addEventListener('input', () =>{
+user.addEventListener('input', () => {
     errorCheck(user.value, consent.checked)
 })
 
-consent.addEventListener('input', () =>{
+consent.addEventListener('input', () => {
     errorCheck(user.value, consent.checked)
 })
 
 errorCheck = (textIn, consentIn) => {
     let validText = (textIn.length > 0)
     console.log(validText)
-    if(validText && consentIn) {
+    if (validText && consentIn) {
         button.disabled = false;
         error.style.display = "none"
         userError.hidden = false;
