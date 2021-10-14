@@ -1,10 +1,13 @@
 let button = document.getElementById("send")
-let name = document.getElementById("name")
-let greeting = document.getElementById("greeting")
-let error = document.getElementById("errors")
+    user = document.getElementById("name")
+    consent = document.getElementById("consent")
+    greeting = document.getElementById("greeting")
+    error = document.getElementById("errors")
+    userError = document.getElementById("name-error")
+    consentError = document.getElementById("consent-error")
 
-if(name.value.length > 0) {
-    greeting.innerText = `Hej ${name.value}!`
+if(user.value.length > 0 && consent.checked == true) {
+    greeting.innerText = `Hej ${user.value}!`
     button.disabled = false
 } else {
     error.style.display = "block"
@@ -12,15 +15,29 @@ if(name.value.length > 0) {
 }
 
 button.addEventListener('click', () =>{
-    greeting.innerText = `Hej ${name.value}!`
+    greeting.innerText = `Hej ${user.value}!`
 })
 
-name.addEventListener('input', (e) =>{
-    if(e.target.value.length < 1) {
-        button.disabled = true;
-        error.style.display = "block"
-    } else {
+user.addEventListener('input', () =>{
+    errorCheck(user.value, consent.checked)
+})
+
+consent.addEventListener('input', () =>{
+    errorCheck(user.value, consent.checked)
+})
+
+errorCheck = (textIn, consentIn) => {
+    let validText = (textIn.length > 0)
+    console.log(validText)
+    if(validText && consentIn) {
         button.disabled = false;
         error.style.display = "none"
+        userError.hidden = false;
+        consentError.hidden = false;
+    } else {
+        button.disabled = true;
+        error.style.display = "block"
+        userError.hidden = (!validText) ? false : true
+        consentError.hidden = (!consentIn) ? false : true
     }
-})
+}
