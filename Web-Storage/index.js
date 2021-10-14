@@ -1,1 +1,2 @@
-localStorage.setItem('color', 'green')
+localStorage.setItem('a', 'c')
+sessionStorage.setItem('b', 'c')
