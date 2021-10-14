@@ -1,2 +1,2 @@
-localStorage.setItem('a', 'c')
-sessionStorage.setItem('b', 'c')
+let a = [{name: "Alice"}]
+sessionStorage.setItem('users', JSON.stringify(a))
